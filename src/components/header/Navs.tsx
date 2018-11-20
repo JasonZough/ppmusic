@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import styles from './styles/Navs.module.css'
+
 class Navs extends React.PureComponent {
     render () {
       const tabs = [
@@ -11,10 +13,10 @@ class Navs extends React.PureComponent {
         {label: 'VIP', value: 'vip'},
       ]
       return (
-        <ul className='ph-navs'>
+        <ul className={styles.navs}>
           {tabs.map((tab) => (
-            <li className='phn-navItem'>
-              <Link className='phnn-link' to={tab.value}>{tab.label}</Link>
+            <li className={styles.navItem}>
+              <Link className={styles.link} to={tab.value}>{tab.label}</Link>
             </li>
           ))}
         </ul>

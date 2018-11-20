@@ -5,7 +5,7 @@ import Header from './components/header'
 import Footer from './components/footer/index'
 import MusicHall from './components/music-hall/index'
 
-import styles from './styles/App.module.css'
+import styles from './App.module.css'
 
 class App extends React.PureComponent {
   render () {
@@ -13,7 +13,7 @@ class App extends React.PureComponent {
       <Router>
         <div className={styles.page}>
           <Header/>
-          <main className='p-main'>
+          <main className={styles.main}>
             <Route exact path='/' component={MusicHall} />
           </main>
           <Footer/>

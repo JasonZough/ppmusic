@@ -4,7 +4,9 @@ import AuthedAvater from '../../common/AuthedAvater'
 import vipBadge from '../../../assets/img/svip_g.png'
 import musicBadge from '../../../assets/img/sui_g.png'
 
-class Menus extends React.PureComponent {
+import s from './styles/Dropdown.module.css'
+
+class Dropdown extends React.PureComponent {
     render () {
       const menuItems = [
         {
@@ -31,18 +33,18 @@ class Menus extends React.PureComponent {
         },
       ]
       return (
-        <div className='php-dropdown'>
-          <div className='phpd-header'>
+        <div className={s.dropdown}>
+          <div className={s.header}>
             <AuthedAvater/>
-            <p className='hpdh-name'>Jason</p>
-            <div className='hpdh-badges'>
-              <img className='pdhb-vipBadge' src={vipBadge}/>
-              <img className='pdhb-musicBadge' src={musicBadge}/>
+            <p className={s.name}>Jason</p>
+            <div className={s.badges}>
+              <img className={s.vipBadge} src={vipBadge}/>
+              <img className={s.musicBadge} src={musicBadge}/>
             </div>
           </div>
-          <ul className='phpd-menu'>
+          <ul className={s.menu}>
             {menuItems.map((item) => (
-              <li className='hpdm-item'>
+              <li className={s.item}>
                 <div className='pdmi-left'>
                   <a href='javascript:void(0)' className='dmil-title'>{item.title}</a>
                   {item.desc && (
@@ -62,4 +64,4 @@ class Menus extends React.PureComponent {
     }
   }
 
-  export default Menus
+  export default Dropdown
