@@ -1,6 +1,8 @@
 import React from 'react'
 
 import AuthedAvater from '../../common/AuthedAvater'
+import vipBadge from '../../../assets/img/svip_g.png'
+import musicBadge from '../../../assets/img/sui_g.png'
 
 class Menus extends React.PureComponent {
     render () {
@@ -34,8 +36,8 @@ class Menus extends React.PureComponent {
             <AuthedAvater/>
             <p className='hpdh-name'>Jason</p>
             <div className='hpdh-badges'>
-              <img className='pdhb-vipBadge'/>
-              <img className='pdhb-musicBadge'/>
+              <img className='pdhb-vipBadge' src={vipBadge}/>
+              <img className='pdhb-musicBadge' src={musicBadge}/>
             </div>
           </div>
           <ul className='phpd-menu'>

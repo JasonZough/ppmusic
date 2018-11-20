@@ -1,7 +1,7 @@
 import React from 'react'
 
 import AuthedAvater from '../../common/AuthedAvater'
-import Menus from './Menus'
+import Dropdown from './Dropdown'
 
 class Profile extends React.PureComponent {
     render () {
@@ -9,7 +9,7 @@ class Profile extends React.PureComponent {
         <div className='ph-profile'>
           {/* <a className='php-loginBtn' href='javascript:void(0)'>login</a> */}
           <AuthedAvater/>
-          <Menus/>
+          <Dropdown/>
         </div>
       )
     }
