@@ -1,0 +1,5 @@
+.page {
+    position: fixed;
+    overflow: auto;
+    composes: stretch from './common.css';
+}
