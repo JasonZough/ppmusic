@@ -1,5 +1,6 @@
 .page {
+    composes: stretch from './common.css';
     position: fixed;
     overflow: auto;
-    composes: stretch from './common.css';
+    min-width: 1200px;
 }
