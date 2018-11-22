@@ -1,4 +1,5 @@
 .header {
+    composes: contentPart from './common.css';
     height: 90px;
     margin: 0 auto;
 }
